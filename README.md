@@ -8,12 +8,21 @@ To simplify the example, this final dimension is represented with the RNG seeded
 
 In simple terms, you can represent (for example) any board state in a game of tic-tac-toe with the coordinate:
 
-    universe[rng_seed][turn_number]
+    > universe[rng_seed][turn_number]
+
+    X  -  O
+    X  O  O
+    -  -  O
+
 
 Similarly, the spacial coordinate can tell us the value of any "spot" on the tic-tac-toe board in that state with:
 
-    universe[rng_seed][turn_number][x, y]
+    > universe[rng_seed][turn_number][x, y]
+
+    'X'
 
 And of course, going the other direction and removing the time dimension results in a deterministic, time-independent universe (game) in which a game _could_ be played out, though only one way (fate, anyone)?
 
     universe[rng_seed]
+
+    #<Universe::Timeline:0x0056260f815890>
